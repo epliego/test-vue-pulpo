@@ -38,7 +38,7 @@ import $ from 'jquery';
 
 function currency_conversion(from_currency: string | number | string[] | undefined, to_currency: string | number | string[] | undefined) {
   $.ajax({
-    url: 'http://localhost:3001/v1/currency/currency-conversion',
+    url: 'http://127.0.0.1:3001/v1/currency/currency-conversion',
     dataType: "json",
     cache: false,
     //timeout: 5000,
@@ -72,7 +72,7 @@ function currency_conversion(from_currency: string | number | string[] | undefin
 
 function list_from_currencies() {
   $.ajax({
-    url: 'http://localhost:3001/v1/currency/list-currencies',
+    url: 'http://127.0.0.1:3001/v1/currency/list-currencies',
     dataType: "json",
     cache: false,
     //timeout: 5000,
@@ -105,7 +105,7 @@ function list_from_currencies() {
 
 function list_to_currencies() {
   $.ajax({
-    url: 'http://localhost:3001/v1/currency/list-currencies',
+    url: 'http://127.0.0.1:3001/v1/currency/list-currencies',
     dataType: "json",
     cache: false,
     //timeout: 5000,
